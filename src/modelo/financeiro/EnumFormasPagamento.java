@@ -1,4 +1,4 @@
-package modelo.financeiro.enumeracoes;
+package modelo.financeiro;
 
 public enum EnumFormasPagamento {
     CREDITO(1,"CREDITO"),
@@ -19,12 +19,10 @@ public enum EnumFormasPagamento {
             if(i.getNumero() == numero){
                 return i;
             }
-        }
-        return CREDITO;
+        } return CREDITO;
     }
 
-    public int getNumero() {
-        return numero;
-    }
+    public int getNumero() { return numero; }
+    public String getFormaPagamento() { return palavra; }
 
 }

@@ -1,15 +1,14 @@
 package modelo.financeiro;
 
 import modelo.empresas.Processador;
-import modelo.financeiro.enumeracoes.EnumTipoPlastico;
 
 import java.math.BigDecimal;
 
 public interface Transacao<T> {
 
-    String codigoTransacao();
+    int getNumReg();
 
-    //EnumTipoPlastico tipoPlastico(EnumTipoPlastico tipoPlastico);
+    String codigoTransacao();
 
     BigDecimal totalTransacao(Processador processador, double pesoKg);
 

@@ -28,6 +28,7 @@ public class Processador extends PessoaJuridica {
         System.out.println();
         return ("\n---------- Informações do Processador ----------" +
                 "\nNúmero de registro: " + numRegistro +
+                "\nPreço pago por Kg: R$" + String.valueOf(precoPagoKg.intValue()) +
                 "\nDados da Empresa Processadora de Plásticos Recicláveis:" + super.toString());
     }
 
