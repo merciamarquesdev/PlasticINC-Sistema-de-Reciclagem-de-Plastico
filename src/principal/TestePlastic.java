@@ -4,7 +4,7 @@ import modelo.empresas.Endereco;
 import modelo.empresas.Processador;
 import modelo.empresas.PostoDeColeta;
 import modelo.financeiro.EnumFormasPagamento;
-import modelo.repositorio.Relatorio;
+import modelo.financeiro.Relatorio;
 import modelo.repositorio.Repository;
 import modelo.financeiro.Venda;
 import modelo.financeiro.Compra;
@@ -209,13 +209,6 @@ public class TestePlastic {
         }
 
         System.out.println("Valor da compra: R$ " + String.valueOf(processador.getPrecoPagoKg().multiply(BigDecimal.valueOf(pesoKg))));
-
-//        System.out.print("\nDigite o valor a ser pago: ");
-//        double valor = scanner.nextDouble();
-//        if (valor < 0) {
-//            System.out.println("\nErro: Valor Inválido");
-//            return false;
-//        }
 
         System.out.println("\nCrédito (1) | Débito (2) | Pix (3) | Depósito (4)");
         System.out.print("Digite a Forma de Pagamento: ");
