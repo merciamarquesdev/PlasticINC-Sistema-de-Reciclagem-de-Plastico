@@ -1,16 +1,13 @@
 package modelo.repositorio;
 
-import modelo.empresas.PessoaJuridica;
 import modelo.empresas.PostoDeColeta;
 import modelo.empresas.Processador;
 import modelo.empresas.Endereco;
-import modelo.financeiro.Venda;
 import modelo.financeiro.Transacao;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Repository <T>{
 
@@ -42,16 +39,16 @@ public class Repository <T>{
 
     public List getPostosDeColetaCadastrados(){return postosCadastrados;}
     public List getProcessadoresCadastrados(){
-        Endereco endereco1 = new Endereco("Av. Brasil","1500","11111-11","Amarelo","RJ","RJ");
-        Processador processador1 = new Processador(1,"Posto da Guanabara","1000000002000",new BigDecimal(3.00),endereco1);
-        Endereco endereco2 = new Endereco("Av. Brasil","1500","11111-11","Amarelo","RJ","RJ");
-        Processador processador2 = new Processador(2,"Posto da Guanabara","1000000002000",new BigDecimal(2.50),endereco2);
-        Endereco endereco3 = new Endereco("Av. Brasil","1500","11111-11","Amarelo","SP","RJ");
-        Processador processador3 = new Processador(3,"Posto da Guanabara","1000000002000",new BigDecimal(3.70),endereco3);
-        Endereco endereco4 = new Endereco("Av. Brasil","1500","11111-11","Amarelo","SP","RJ");
-        Processador processador4 = new Processador(4,"Posto da Guanabara","1000000002000",new BigDecimal(2.75),endereco4);
-        Endereco endereco5 = new Endereco("Av. Brasil","1500","11111-11","Amarelo","RJ","RJ");
-        Processador processador5 = new Processador(5,"Posto da Guanabara","1000000002000",new BigDecimal(3.10),endereco5);
+        Endereco endereco1 = new Endereco("Av. Brasil","1500","50390-10","Amarelo","Rio de Janeiro","RJ");
+        Processador processador1 = new Processador(1,"Posto da Guanabara","1000000002000",new BigDecimal(3),endereco1);
+        Endereco endereco2 = new Endereco("Av. Paulista","1200","49930-20","Laranjeiras","São Paulo","SP");
+        Processador processador2 = new Processador(2,"Posto Anil","1000000005670",new BigDecimal(2),endereco2);
+        Endereco endereco3 = new Endereco("Av. das Américas","10500","13021-11","Azul","Belo Horizonte","MG");
+        Processador processador3 = new Processador(3,"Posto da Paz","1000000002220",new BigDecimal(4),endereco3);
+        Endereco endereco4 = new Endereco("Rua Bonita","100","10341-20","Verde","Rio de Janeiro","RJ");
+        Processador processador4 = new Processador(4,"Posto Esperança","1000112202000",new BigDecimal(2),endereco4);
+        Endereco endereco5 = new Endereco("Rua das Flores","450","11222-60","Rosa","São Paulo","SP");
+        Processador processador5 = new Processador(5,"Posto Jardim","1000000512000",new BigDecimal(3),endereco5);
         List<Processador> processadoresCadastrados = List.of(processador1, processador2, processador3, processador4, processador5);
         return processadoresCadastrados;
     }

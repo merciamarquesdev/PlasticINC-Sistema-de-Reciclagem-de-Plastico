@@ -1,6 +1,5 @@
 package modelo.empresas;
 
-import java.math.BigDecimal;
 
 public class PostoDeColeta extends PessoaJuridica {
     private int numRegistro;
@@ -18,7 +17,7 @@ public class PostoDeColeta extends PessoaJuridica {
 
     public String toString() {
         System.out.println();
-        return ("\n---------- Informações do Posto de Coleta ----------" +
+        return ("\n---------------------- Informações do Posto de Coleta ----------------------" +
                 "\nNúmero de registro: " + numRegistro +
                 "\nDados da Empresa Coletora de Plásticos Recicláveis:" + super.toString());
     }

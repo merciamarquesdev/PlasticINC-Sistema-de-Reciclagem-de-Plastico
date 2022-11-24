@@ -42,14 +42,14 @@ public class Venda<T> implements Transacao<T> {
 
     public String toString() {
         System.out.println();
-        return ("\n---------- Nota Fiscal " + codigoTransacao() + " ----------" +
+        return ("\n------------------------------ Nota Fiscal " + codigoTransacao() + " -----------------------------" +
                 "\nTipo de Transação: Venda" +
                 "\nCNPJ Posto de Coleta: " + cnpjPostoDeColeta +
                 "\nCNPJ Processador: " + cnpjProcessador +
                 "\nRazão Social do Ponto de Coleta: " + razaoSocialPostoDeColeta +
                 "\nRazão Social do Processador: " + razaoSocialProcessador +
                 "\nCodigo do Processador: " + String.valueOf(numRegProcessador) +
-                "\nValor Recebido: R$" + String.valueOf(valorPago.intValue()) +
+                "\nValor Recebido: R$ " + String.valueOf(valorPago.intValue()) +
                 "\nForma de Pagamento: " + formaPagamento.getFormaPagamento());
     }
 
