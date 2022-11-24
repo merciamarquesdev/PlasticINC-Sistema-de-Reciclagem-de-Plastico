@@ -15,5 +15,5 @@ Esse sistema foi desenvolvido para:
 Postos de Coleta, Processadores, Compras e Vendas são cadastrados no sistema.
 As compras e vendas são feitas a partir de uma tonelada (1000 kg) de plástico reciclável.
 
-Ao final, um relatório de transações é impresso informando os dados de uma venda,
-garantindo que todo o material reciclado é de origem segura e com Postos de Coleta recebendo remuneração justa.
+Ao final, um relatório de transações é impresso informando os dados da transação desejada,
+garantindo que todo o material reciclado seja de origem segura e com Postos de Coleta recebendo remuneração justa.
